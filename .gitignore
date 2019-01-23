@@ -1,0 +1,17 @@
+node_modules/
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+/.sass-cache
+/dist
+/tmp
+/out-tsc
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
