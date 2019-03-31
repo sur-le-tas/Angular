@@ -15,7 +15,7 @@
 		"component-class-suffix": [true, "Component", "Page"],
 		"directive-class-suffix": true,
 		"directive-selector": [true, "attribute", "app", "camelCase"],
-		"component-selector": [true, "element", ["app", "auth", "todo"], "kebab-case"],
+		"component-selector": [true, "element", ["app", "todo", "box"], "kebab-case"],
 
 		// Other
 		"await-promise": true,

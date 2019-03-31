@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-	selector: 'todo-details',
+	selector: 'app-todo',
 	template: `
 		<p>todo-details works!</p>
 	`,
 	styles: [],
 })
-export class TodoDetailsComponent implements OnInit {
+export class TodoComponent implements OnInit {
 	constructor() {}
 
 	ngOnInit() {}

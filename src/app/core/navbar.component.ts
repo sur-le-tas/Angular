@@ -5,7 +5,11 @@ import { Component, OnInit } from '@angular/core'
 	template: `
 		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 			<a class="navbar-brand" routerLink="/">Sur le tas</a>
-			<button class="navbar-toggler" type="button" (click)="toggleCollapse()"><span class="navbar-toggler-icon"></span></button>
+
+			<button class="navbar-toggler" type="button" (click)="toggleCollapse()">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
 			<div class="collapse navbar-collapse" [class.show]="show">
 				<div class="navbar-nav">
 					<a
@@ -25,7 +29,6 @@ import { Component, OnInit } from '@angular/core'
 			</div>
 		</nav>
 	`,
-	styles: [],
 })
 export class NavbarComponent implements OnInit {
 	show = false
@@ -42,9 +45,14 @@ export class NavbarComponent implements OnInit {
 			exact: false,
 		},
 		{
+			link: '/content-vs-view',
+			name: 'Content/View',
+			exact: false,
+		},
+		{
 			link: '/connexion',
 			name: 'Connexion',
-			exact: true,
+			exact: false,
 		},
 	]
 

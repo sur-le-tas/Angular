@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 @Component({
-	selector: 'todo-list',
+	selector: 'app-todo-list',
 	template: `
 		<p>todo-list works!</p>
 	`,

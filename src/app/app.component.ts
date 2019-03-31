@@ -4,7 +4,10 @@ import { Component, OnInit } from '@angular/core'
 	selector: 'app-root',
 	template: `
 		<app-navbar></app-navbar>
-		<main class="container mt-3"><router-outlet></router-outlet></main>
+
+		<main class="container mt-3">
+			<router-outlet></router-outlet>
+		</main>
 	`,
 })
 export class AppComponent implements OnInit {

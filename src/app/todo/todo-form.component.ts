@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core'
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 
 @Component({
-	selector: 'todo-form',
+	selector: 'app-todo-form',
 	template: `
 		<form (ngSubmit)="create()" [formGroup]="todoForm" class="w-75 mx-auto">
 			<div class="form-group">

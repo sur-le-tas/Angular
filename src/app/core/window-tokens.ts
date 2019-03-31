@@ -3,9 +3,9 @@ import { isPlatformBrowser } from '@angular/common'
 
 // https://angular.io/api/core/InjectionToken
 
-export const WINDOW = new InjectionToken<Window>('WindowToken', {
+export const WINDOW = new InjectionToken<Window | null>('WindowToken', {
 	providedIn: 'root',
-	factory: () => createWindow(inject(PLATFORM_ID)) as Window,
+	factory: () => createWindow(inject(PLATFORM_ID)),
 })
 
 export function createWindow(platformId: object) {
@@ -13,9 +13,9 @@ export function createWindow(platformId: object) {
 	return null
 }
 
-export const LOCALSTORAGE = new InjectionToken<Storage>('LocalstorageToken', {
+export const LOCALSTORAGE = new InjectionToken<Storage | null>('LocalstorageToken', {
 	providedIn: 'root',
-	factory: () => createLocalstorage(inject(PLATFORM_ID)) as Storage,
+	factory: () => createLocalstorage(inject(PLATFORM_ID)),
 })
 
 export function createLocalstorage(platformId: object) {

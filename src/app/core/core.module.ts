@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common'
 import { NgModule, Optional, SkipSelf } from '@angular/core'
 import { NavbarComponent } from './navbar.component'
 
-// J'importe routerModule pour me servir de ses directives :
+// Je dois importer routerModule pour me servir de ses directives :
 // https://angular.io/api/router#directives
 import { RouterModule } from '@angular/router'
 import { NotFoundComponent } from './not-found.component'
